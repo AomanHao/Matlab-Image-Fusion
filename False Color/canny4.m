@@ -1,6 +1,7 @@
 function Y=canny4(X,TL,TH)
 
 X=gslvbo(X);
+figure;imshow(X);
 X1=im2double(X);
 [hig,wid]=size(X1);
 
