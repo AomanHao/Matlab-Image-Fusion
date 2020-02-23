@@ -1,4 +1,12 @@
-clear;clc
+%% 程序分享 
+% 西安邮电大学图像处理团队-郝浩
+% 个人博客 www.aomanhao.top
+% Github https://github.com/AomanHao
+%--------------------------------------
+
+clear
+close all
+clc
 
 size=512;
 block=8;
@@ -15,14 +23,11 @@ block_dct1=zeros(block,block);
 i=imread('watermark64by64.png');
 mark=reshape(i,1,LENGTH);
 figure;imshow(i);title('水印');
-%subplot(3,2,1);plot(mark);title('水印'); 
-%显示原图
 figure;I=imread('lena512512.jpg');   
 I0=I;
 imshow(I);title('原始图像');
 
-% BW=edge(I,'canny');figure;;imshow(BW);
-% title('edge of origine image');
+
 %嵌入水印
 k=1;
 for m=1:blockno
@@ -82,5 +87,4 @@ mark1=reshape(mark1,64,64);
 figure
 imshow(mark1)
 title('提取的水印')
-msgbox('MATLAB编程答疑，请加QQ: 993878382','MATLAB答疑','help')
-web http://993878382.qzone.qq.com -browser
+
