@@ -1,4 +1,13 @@
-clc;clear;
+%% 程序分享 
+% 西安邮电大学图像处理团队-郝浩
+% 个人博客 www.aomanhao.top
+% Github https://github.com/AomanHao
+%--------------------------------------
+
+%% 鱼眼图像校正
+clear
+close all
+clc
 %I0=extraction_fish('d2.jpg');
 tic;
 I0=imread('23.jpg');   %提取轮廓
